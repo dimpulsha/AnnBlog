@@ -1,0 +1,343 @@
+@font-face {
+    font-family: "Open Sans Light";
+    src: url("fonts/OpenSans-Light.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Open Sans";
+    src: url("fonts/open-sans-v18-latin_cyrillic-regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Spectral SC";
+    src: url("fonts/SpectralSC-Medium.woff2") format("woff2");
+  }
+  
+body {
+    font-family: "Open Sans";
+ font-style: normal;  
+ font-size: 16px; 
+ line-height: 26px;
+ color: #2E2F22;
+display:flex;
+flex-direction: column;
+}
+
+h2 {font-family: "Spectral SC", serif;
+    font-style: normal;  
+    font-size: 36px;
+    font-weight: 700; 
+    line-height: 55px; 
+}
+
+.article-title, label {
+    font-family: "Spectral SC", serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 27px;
+}
+.top-article-text .article-title, .portfolio-text .article-title, label{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.portfolio-text .j-name{
+    font-family: "Spectral SC", serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+}
+.font-form{
+    font-family: "Open Sans";
+    font-size: 16px;
+    line-height: 22px;
+    color: #202117;
+    
+}
+.text-margin-0{
+    margin: 0px; 
+}
+.text-margin-t0{
+    margin-top: 0px;
+}
+.text-margin-b8{
+    margin-bottom: 8px;
+}
+.text-margin-b12{
+    margin-bottom: 12px;
+}
+.text-margin-t0-b12{
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+a {
+    color: #2E2F22;
+}
+
+.white-text{
+    color: white;
+}
+
+.float-left{
+    float: left;
+}
+
+.float-right{
+    float: right;
+}
+
+.header {
+    width: 1440px;
+    height: 581px;
+    background-image:url(img/head.svg);
+    border: 1px solid black;
+    margin: 0px auto 84px;  
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    /* flex по центру лого слева меню справа*/
+    justify-content: flex-end;
+    height: 87px;
+    align-items: center;
+    margin: 0px 120px;
+}
+.menu-logo{  
+    width: 130px;
+   margin-right: auto;
+   margin-left: 0px;
+}
+.menu-item{
+    height: 25px;
+    margin-left: 84px;
+}
+ 
+.main{
+    width: 1440px;
+    margin: auto;
+}
+
+.my-article{
+    /*!!!! по моему это ерунда и разделы должны расширяться вниз в зависимости от контента
+    по ширине, возможно, не ограничивать. решить отступами или центровкой вложенных блоков*/
+    /* для флексов - перенос содержимого*/
+
+    width: 1200px;
+    min-height: 1290px;
+    /*мин-высота чтобы блок растягивался по высоте - потому что в сафаре шрифты как-то по-другому рисуются и есть неожиданные переносы на новую строку*/
+    margin: 0px auto 84px;
+}
+  .content-flex{
+    display: flex;
+    flex-direction: row;
+
+  }
+ .last-article{
+    margin-top: 49px;
+ }
+ 
+ .one-article{
+    width: 387px;
+ }
+ .one-article:nth-child(2), .portfolio-item:nth-child(2)
+ {
+     margin-left: auto;
+     margin-right: auto;
+     
+ }
+ .top-article{
+    margin-top: 62px; 
+ }
+ .top-article-item{
+    width: 590px;
+    height: 552px;
+    border-radius: 10px; 
+    padding: 0px;
+    /* ещё параметры фонового рисунка - центрирование и повтор-запрещен*/
+ }
+ .flex-item-left{
+margin-right: auto;
+ }
+ .flex-item-right{
+    margin-left: auto;  
+ }
+ .top-article-text{
+ margin-left: 82px;
+ margin-right: 79px;
+ margin-top: 359px;
+text-align: left;   
+ }
+ .tag{ 
+   color:rgba(46, 47, 34, 0.7);
+ }
+
+.tag-top{ 
+    color:rgba(255, 255, 255, 0.7);
+}
+
+.my-article-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 150px;
+    text-align: center; 
+}
+.article-header{
+    text-align: center;
+    height: 104px; 
+}
+.about-me{
+    width: 1200px;
+    height: 798px;
+    margin: 0px auto 84px;
+}
+.about-me-block{
+    width: 590px;
+    height: 693px;
+    border-radius: 10px;
+}
+.about-me-summary{  
+    padding-left: 20px;
+    padding-top: 42px;
+}
+.about-me-maxim{ 
+    margin-top: 48px;
+    border-left: 3px solid #D7D1C9;
+    padding: 27px 20px 27px 20px;
+    font-style: italic;
+font-weight: normal;
+font-size: 30px;
+line-height: 40px;
+}
+.portfolio{
+    width: 1220px;
+    height: 779px;
+    margin: 0px auto 84px;
+}
+.portfolio-item{
+    width: 389px;
+    min-height: 525px;
+    border-radius: 10px; 
+    padding: 0px;
+}
+.portfolio-text{
+    margin-left: 18px;
+    margin-right: 18px;
+    text-align: center;
+}
+.journal{
+    margin-top: 140px;
+    margin-bottom: 0px;
+}
+
+.article-name{
+    margin-top: 44px;
+    margin-bottom: 0px;
+}
+.article-desc{
+    margin-top: 17px;
+    margin-bottom: 0px;
+}
+.write-me{
+     width: 996px;
+     height: 741px;
+    margin: 0px auto 84px;
+}
+
+.form{
+    width: 996px;
+    min-height: 637px;
+    border-radius: 10px;
+    background: url("img/form.svg") center no-repeat;
+    padding:0px;
+}
+.div-form{
+    padding: 53px 80px 62px 80px;
+}
+.contact{  
+    display: inline-block;
+    width: 48.5%;
+    margin-bottom: 20px;
+}
+.contact:nth-child(2){
+    margin-left: 20px;
+}
+
+input, textarea{
+    border: 1px solid black;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+.contact input{
+    padding:20px;  
+    width: 90%; 
+}
+textarea {
+    width: 95%;
+    margin-bottom: 20px;
+    padding:20px;  
+    opacity: 0.7;   
+}
+.button{
+     text-align: center;
+}
+.button input {
+    padding: 12px 65px;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.theme-button{
+    width: 203px;
+    height: 46px;
+    background-color:#D7D1C9;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 22px;
+    float: right;  
+}
+.show-button{
+    height: 44px;
+padding: 12px 58px;
+border: 1px solid black;
+    border-radius: 10px;
+     font-size: 16px;
+     line-height: 22px;
+background-color: transparent;
+}
+
+.img-border{
+    border-radius: 10px;
+    width: 387px;
+    /*ширина лишняя убрать в нужный элемент*/
+}
+
+.img-arrow-down{
+vertical-align: middle;
+padding-left: 33px;
+}
+
+.footer{
+    width: 1440px;
+    height: 181px;
+    background-color: #D7D1C9;
+    margin: auto;
+    text-align: center;
+}
+.footer a{
+    display: inline-block;
+    margin-top: 65px;
+    margin-bottom: 91px;
+    margin-left: 120px;
+    font-size: 18px;
+    line-height: 25px;
+    
+}
+.menu a, .footer a {
+    text-decoration: none;
+}
