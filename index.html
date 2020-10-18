@@ -1,186 +1,235 @@
 <!DOCTYPE html>
+
 <head lang="ru">
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <title>Личный блог Анны N</title>
     <meta name="descripton" content="Личный блог копирайтера Анны N">
-    <meta name="keywords" content="Анна N, Anna N, копирайтер, личный блог, статьи в журналах, путешествия, психология, написать статью">
+    <meta name="keywords"
+        content="Анна N, Anna N, копирайтер, личный блог, статьи в журналах, путешествия, психология, написать статью">
     <link rel="stylesheet" href="style.css">
+    <!-- https://dimpulsha.github.io/AnnBlog/. -->
 </head>
-<body >
-    <header>
-        <div class="header">
-             <div class="menu">
-                 <div class="menu-logo"><img src="img/logo.svg" alt="Ann Swift"></div>
-                 <div class="menu-item"><a href="#allarticle">Статьи</a></div>
-                 <div class="menu-item"><a href="#i-am">Обо мне</a></div>
-                 <div class="menu-item"><a href="#portfolio-id"> Портфоолио</a></div>
-                 <div class="menu-item"><a href="#write-id">Написать мне</a></div>
-             </div>
+<body class="font16-26 page1">
+    <header class="header">
+        <div class="menu">
+            <div class="menu-logo"><img src="img/logo.svg" alt="Ann Swift"></div>
+            <div class="menu-item"><a href="#allarticle">Статьи</a></div>
+            <div class="menu-item"><a href="#i-am">Обо мне</a></div>
+            <div class="menu-item"><a href="#portfolio-id"> Портфолио</a></div>
+            <div class="menu-item"><a href="#write-id">Написать мне</a></div>
         </div>
-
     </header>
-    <main>
-     <div class="main">
-    <article >
-        <div class="my-article">
-         <div class="tag-float clearfix">
-            <h2 class="float-left text-margin-0" id="all-article">Все статьи</h2>
-            <button class="theme-button" type="button"> Выбрать тему <img class="img-arrow-down" src="img\arrow-down.svg" alt=""></button>
-        </div> 
-        <div class="last-article content-flex">
-            <div class="one-article"> 
-                <img class="img-border" src="img/a1.svg"> 
-                <p class="article-title text-margin-b8">Путешествие в Берлин в августе</p>
-                <p class="text-margin-t0-b12">Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</p>
-                <div class="tag clearfix">
-                    <p class="text-margin-t0-b12 float-left ">Теги: путешествия</p>
-                    <time class="float-right" datetime="2020-09-29T00:00:00+03:00">29.09.2020</time>
-                </div>                
-            </div>
-            <div class="one-article">  
-                <img src="img/a2.svg">
-                <p class="article-title text-margin-b8">Где выпить колдбрю в Москве</p>
-                <p class="text-margin-t0-b12">Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p>
-                <div class="tag clearfix">
-                    <p class="text-margin-t0-b12 float-left ">Теги: город</p>
-                    <time class="float-right" datetime="2020-07-24T00:00:00+03:00">24.07.2020</time>
-                </div>   
-           </div>
-            <div class="one-article">  
-                <img src="img/a3.svg"> 
-                <p class="article-title text-margin-b8">Прочитано: книжные рекомендации</p>
-                <p class="text-margin-t0-b12">Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
-                <div class="tag clearfix">
-                    <p class="text-margin-t0-b12 float-left ">Теги: книги</p>
-                    <time class="float-right" datetime="2020-07-15T00:00:00+03:00">15.07.2020</time>
-                </div> 
-            </div>
-        </div>
-        <div class="top-article content-flex">
-                <div class="top-article-item flex-item-left" style="background-image: url(img/film.svg);"> 
-                <div class="white-text top-article-text">
-                    <p class="article-title text-margin-b8 text-margin-t0">Снимки на плёнку</p>
-                    <p class="text-margin-t0-b12">Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
-                    <div class="tag-top clearfix">
-                        <p class="text-margin-t0-b12 float-left ">Теги: рецепты</p>
-                        <time class="float-right" datetime="2020-06-29T00:00:00+03:00">29.06.2020</time>
-                    </div>      
-                </div>
-            </div>
-             <div class="top-article-item flex-item-right" style="background-image: url(img/home-eat.svg);"> 
-                <div class="white-text top-article-text">
-                    <p class="article-title text-margin-b8 text-margin-t0">Домашний чизкейк</p>
-                    <p class="text-margin-t0-b12">Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</p>
-                    <div class="tag-top clearfix">
-                        <p class="text-margin-t0-b12 float-left ">Теги: рецепты</p>
-                        <time class="float-right" datetime="2020-06-24T00:00:00+03:00">24.06.2020</time>
-                    </div>    
-                </div>
-            </div>
-        </div>
-        <div class="my-article-footer">
-            <button class="show-button">Показать ещё </button>
-        </div>
-    </div>
-    </article>
-    <article >
-        <div class="about-me">
-            <div class="article-header">
-            <h2 class="text-margin-0" id="i-am">Обо мне</h2>
-            </div>
-            <div class="content-flex">
-            <div class="about-me-block flex-item-left">
-                <img src="img/my-photo.svg" alt="это я, Анна N" title="Это я, Анна N">   
-            </div>
-            <div class="about-me-block flex-item-right">
-                <div class="about-me-summary">
-                    <p class="text-margin-t0-b12">Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь рассказы о моих путешествиях, снимки на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.</p>
-                    <br>
-                    <p class="text-margin-t0-b12">Я работаю копирайтером, поэтому мой блоге — это ещё и моё портфолио. Ниже размещены несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!</p>
-                    <br>
-                <p class="text-margin-t0-b12">Если вы хотите написать мне — это можно сделать в соцсетях или через <a href="#">форму</a>. Всегда приятно услышать обратную связь от читателей и познакомиться поближе.</p> 
-                  <br>
-                <p class="text-margin-t0-b12">Приятного чтения!</p>
-                </div>
-                <div class="about-me-maxim"><p class="text-margin-0">Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю настояющую себя.</p> </div>
-            </div>
-        </div>
-        </div>
-    </article>
-    <article>
-        <div class="portfolio">
-            <div class="article-header">
-                <h2 class="text-margin-0" id="portfolio-id">Портфолио</h2>
-            </div>
-            <div class="content-flex">
-            <div class="portfolio-item"style="background-image: url(img/p1.svg);"> 
-                <div class="portfolio-text journal "><p class="j-name text-margin-0">Блог HTML Academy</p></div>
-                <div class="portfolio-text article-name"><p class="article-title text-margin-0">«Как учиться продуктивно»</p></div>
-                <div class="portfolio-text article-desc"><p class="text-margin-0">Про основные методы обучения,
-                    которые помогут быстро и надолго
-                    запомнить информацию.</p></div>
-        </div>
-        <div class="portfolio-item" style="background-image: url(img/p2.svg);"> 
-            <div class="portfolio-text journal " ><p class="j-name text-margin-0 white-text">Журнал «LNK»</p></div>
-            <div class="portfolio-text article-name" ><p class="article-title text-margin-0 white-text">«Зачем поцели нужны человеку?
-                И какие они бывают»</p></div>
-            <div class="portfolio-text article-desc" ><p class="text-margin-0 white-text">Поцелуи — повсеместная ежедневная
-                практика. Но зачем люди целуются?
-                Какие смысли вкладывают в этот ритуал?
-                И где корни этой практики?</p></div>
-            </div>
-            <div class="portfolio-item" style="background-image: url(img/p3.svg);"> 
-                <div class="portfolio-text journal " ><p class="j-name text-margin-0">Журнал «Т — Л»</p></div>
-                <div class="portfolio-text article-name" ><p class="article-title text-margin-0">«Советы по эффективной
-                    удалённой работе»</p></div>
-                <div class="portfolio-text article-desc" ><p class="text-margin-0">Поделилась лайфхаками, которые помогают мне работать продуктивно из дома.</p></div>
-            </div>
-        </div>
-
-           <div class="my-article-footer">
-            <button class="show-button">Показать ещё </button>
-        </div>
-        </div>
-    </article>
-    <article>
-        <div class="write-me">
-            <div class="article-header">
-                <h2 class="text-margin-0" id="write-id">Написать мне</h2>
-            </div>
-            
-            <form class=form>
-             <div class="div-form">
+    <main class="main">
+        <!-- class="main" -->
+        <article class="my-article">
+            <div class="tag-float clearfix">
+                <h2 class="float-left font-head" id="all-article">Все статьи</h2>
                 <div>
-                     <div class="contact">
-                        <label for="nameId" class="text-margin-t0-b12">Имя</label>
-                        <input class="font-form" type="text" name="contact-name" id="nameId" placeholder="Иван Иванов">
+                    <!--
+            <button class="theme-button" type="button"> Выбрать тему <img class="img-arrow-down" src="img\arrow-down.svg" alt=""></button>
+            -->
+                    <select class="tag-select font16-22-col2 float-right" id="tagid">
+                        <option value="all" selected>Выбрать тему</option>
+                        <option value="city">Город</option>
+                        <option value="books">Книги</option>
+                        <option value="travel">Путешествия</option>
+                        <option value="food">Рецепты</option>
+                        <option value="photo">Фотографии</option>
+                    </select>
+                </div>
+            </div>
+            <div class="last-article content-flex">
+                <div class="one-article">
+                    <a href="article1.html">
+                        <img src="img/a1.jpg" alt="Берлин">
+                        <p class="article-title font-head">Путешествие в Берлин в августе</p>
+                        <p class="text">Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!
+                        </p>
+                    </a>
+                    <div class="tag-gray clearfix">
+                        <p class="tag text float-left">Теги: путешествия</p>
+                        <time class="float-right" datetime="2020-09-29T00:00:00+03:00">29.09.2020</time>
+                    </div>
+                </div>
+                <div class="one-article">
+                    <a href="article1.html">
+                        <img src="img/a2.jpg" alt="Любимый напиток">
+                        <p class="article-title font-head">Где выпить колдбрю в Москве</p>
+                        <p class="text">Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p>
+                    </a>
+                    <div class="tag-gray clearfix">
+                        <p class="tag text float-left ">Теги: город</p>
+                        <time class="float-right" datetime="2020-07-24T00:00:00+03:00">24.07.2020</time>
+                    </div>
+                </div>
+                <div class="one-article">
+                    <a href="article1.html">
+                        <img src="img/a3.jpg" alt="Читаем книги">
+                        <p class="article-title font-head">Прочитано: книжные рекомендации</p>
+                        <p class="text">Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
+                        <div class="tag-gray clearfix">
+                            <p class="tag text float-left">Теги: книги</p>
+                            <time class="float-right" datetime="2020-07-15T00:00:00+03:00">15.07.2020</time>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="top-article content-flex">
+                <div class="top-article-item flex-item-left" style="background-image: url(img/film.jpg);">
+                    <div class="top-article-text">
+                        <a href="article1.html">
+                            <p class="article-title font-head white-text">Снимки на плёнку</p>
+                            <p class="text white-text">Поделилась с вами весенними фотографиями, и секретами удачных
+                                снимков.</p>
+                        </a>
+                        <div class="tag-white clearfix">
+                            <p class="tag text float-left ">Теги: фотографии</p>
+                            <time class="float-right" datetime="2020-06-29T00:00:00+03:00">29.06.2020</time>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="top-article-item flex-item-right" style="background-image: url(img/home-eat.jpg);">
+                    <div class="top-article-text">
+                        <a href="article1.html">
+                            <p class="article-title font-head white-text">Домашний чизкейк</p>
+                            <p class="text white-text">Что может быть лучше чизкейка с сезонными ягодами? Только
+                                домашний чизкейк!</p>
+                        </a>
+                        <div class="tag-white clearfix">
+                            <p class="tag text float-left ">Теги: рецепты</p>
+                            <time class="float-right" datetime="2020-06-24T00:00:00+03:00">24.06.2020</time>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="my-article-footer">
+                <button class="button2 showarticle" type="button" id="showarticleid"><span
+                        class="font16-22-col1">Показать ещё</span></button>
+            </div>
+        </article>
+        <article class="about-me">
+            <div class="article-header">
+                <h2 class="font-head" id="i-am">Обо мне</h2>
+            </div>
+            <div class="content-flex">
+                <div class="about-me-block flex-item-left">
+                    <img src="img/My-photo.jpg" alt="это я, Анна N" title="Это я, Анна N">
+                </div>
+                <div class="about-me-block flex-item-right">
+                    <div class="about-me-summary">
+                        <p class="text-margin-0">Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь
+                            рассказы о моих путешествиях, снимки на плёнку, рецепты, обзоры на книги. В общем, тексты о
+                            том, что мне инетресно.</p>
+                        <br>
+                        <p class="text-margin-0">Я работаю копирайтером, поэтому мой блоге — это ещё и моё портфолио.
+                            Ниже размещены несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!</p>
+                        <br>
+                        <p class="text-margin-0">Если вы хотите написать мне — это можно сделать в соцсетях или через <a
+                                href="#write-id">форму</a>. Всегда приятно услышать обратную связь от читателей и
+                            познакомиться поближе.</p>
+                        <br>
+                        <p class="text-margin-0">Приятного чтения!</p>
+                    </div>
+                    <div class="about-me-maxim">
+                        <p>Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю
+                            настояющую себя.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="portfolio">
+            <div class="article-header">
+                <h2 class="font-head" id="portfolio-id">Портфолио</h2>
+            </div>
+            <div class="content-flex">
+                <div class="portfolio-item" style="background-image: url(img/p1.jpg);">
+                    <div class="portfolio-text journal">
+                        <p class="j-name font-head">Блог HTML Academy</p>
+                    </div>
+                    <div class="portfolio-text article-name">
+                        <p class="article-title font-head">«Как учиться продуктивно»</p>
+                    </div>
+                    <div class="portfolio-text article-desc">
+                        <p class="text-margin-0">Про основные методы обучения,
+                            которые помогут быстро и надолго
+                            запомнить информацию.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" style="background-image: url(img/p2.jpg);">
+                    <div class="portfolio-text journal ">
+                        <p class="j-name font-head white-text">Журнал «LNK»</p>
+                    </div>
+                    <div class="portfolio-text article-name">
+                        <p class="article-title font-head white-text">«Зачем поцели нужны человеку?
+                            И какие они бывают»</p>
+                    </div>
+                    <div class="portfolio-text article-desc">
+                        <p class="text-margin-0 white-text">Поцелуи — повсеместная ежедневная
+                            практика. Но зачем люди целуются?
+                            Какие смысли вкладывают в этот ритуал?
+                            И где корни этой практики?</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" style="background-image: url(img/p3.jpg);">
+                    <div class="portfolio-text journal ">
+                        <p class="j-name font-head">Журнал «Т — Л»</p>
+                    </div>
+                    <div class="portfolio-text article-name">
+                        <p class="article-title font-head">«Советы по эффективной
+                            удалённой работе»</p>
+                    </div>
+                    <div class="portfolio-text article-desc">
+                        <p class="text-margin-0">Поделилась лайфхаками, которые помогают мне работать продуктивно из
+                            дома.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="my-article-footer">
+                <button class="button2 showarticle" type="button" id="showportfolio"><span
+                        class="font16-22-col1">Показать ещё</span></button>
+            </div>
+        </article>
+        <section class="write-me">
+            <div class="article-header">
+                <h2 class="font-head" id="write-id">Написать мне</h2>
+            </div>
+            <form class=form action="#" method="POST">
+
+                <div class="div-form">
+                    <div class="contact">
+                        <label for="nameId" class="font-head">Имя</label>
+                        <input class="font16-22-col1" type="text" name="contact-name" id="nameId"
+                            placeholder="Иван Иванов" required>
                     </div>
                     <div class="contact">
-                        <label for="emailId" class="text-margin-t0-b12">Email</label>
-                        <input class="font-form" type="email" name="contact-email" id="emailId" placeholder="google@gmail.com">
+                        <label for="emailid" class="font-head">Email</label>
+                        <input class="font16-22-col1" type="email" name="contact-email" id="emailid"
+                            placeholder="google@gmail.com" required>
                     </div>
-                    <div >
-                        <label for="review" class="text-margin-t0-b12">Сообщение</label>
-                        <textarea class="font-form" id="review" name="review" rows="12">Напишите ваше сообщение</textarea>
+                    <div>
+                        <label for="messageid" class="font-head">Сообщение</label>
+                        <textarea class="font16-22-col1 message" name="message" id="messageid" rows="12" minlength="10"
+                            maxlength="200" placeholder="Напишите ваше сообщение"></textarea>
                     </div>
-                     <div class="button">
-                            <input class="font-form" type="submit" name="submit-msg" id="submitId" value="Отправить"> 
+                    <div class="submit">
+                        <input class="font16-22-col1 button2 send-button" type="submit" name="submit-msg" id="submitid"
+                            value="Отправить" >
                     </div>
                 </div>
-            </div>
             </form>
-        </div>
-    </article>
-
-     </div>
+        </section>
     </main>
-    <footer >
+    <footer>
         <div class="footer">
-            <a  href="#">ВК</a>
-            <a  href="#">Телеграмм</a>
-            <a  href="#">Инстаграмм</a>
-            <a  href="#">Твиттер</a>
+            <a href="#">ВК</a>
+            <a href="#">Телеграмм</a>
+            <a href="#">Инстаграмм</a>
+            <a href="#">Твиттер</a>
         </div>
     </footer>
-
+<script src="comment.js"></script>
 </body>
+
+</html>

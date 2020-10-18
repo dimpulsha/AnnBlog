@@ -1,60 +1,131 @@
+
 @font-face {
-    font-family: "Open Sans Light";
-    src: url("fonts/OpenSans-Light.woff") format("woff");
-  }
-  @font-face {
-    font-family: "Open Sans";
-    src: url("fonts/open-sans-v18-latin_cyrillic-regular.woff") format("woff");
-  }
-  @font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light'), local('OpenSans-Light'), url('opensans/opensanslight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url('opensans/opensanslightitalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'), local('OpenSans') url('opensans/opensans.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url('opensans/opensansitalic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url('opensans/opensanssemibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Semibold Italic'), url('opensans/opensanssemibolditalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url('opensans/opensansbold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url('opensans/opensansbolditalic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
     font-family: "Spectral SC";
     src: url("fonts/SpectralSC-Medium.woff2") format("woff2");
-  }
-  
+}
+
+/*переделать на google font*/
+
 body {
-    font-family: "Open Sans";
- font-style: normal;  
- font-size: 16px; 
- line-height: 26px;
- color: #2E2F22;
-display:flex;
-flex-direction: column;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-h2 {font-family: "Spectral SC", serif;
-    font-style: normal;  
-    font-size: 36px;
-    font-weight: 700; 
-    line-height: 55px; 
+/* размеры шрифтов */
+
+.font16-26 {
+    font-size: 16px;
+    line-height: 26px;
+    color: #2E2F22;
 }
 
-.article-title, label {
+.font16-22-col1 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #202117;
+}
+
+.font16-22-col2 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #2E2F22;
+}
+
+.font-head {
     font-family: "Spectral SC", serif;
     font-weight: bold;
+}
+
+/* нужен ли */
+
+.font18-27 {
     font-size: 18px;
     line-height: 27px;
 }
-.top-article-text .article-title, .portfolio-text .article-title, label{
+
+.font18-28 {
+    /* нужен ли */
     font-size: 18px;
     line-height: 28px;
 }
 
-.portfolio-text .j-name{
-    font-family: "Spectral SC", serif;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 30px;
+h2 {
+    font-size: 36px;
+    line-height: 55px;
+    margin: 0px;
 }
-.font-form{
-    font-family: "Open Sans";
-    font-size: 16px;
-    line-height: 22px;
-    color: #202117;
-    
+
+.text {
+    margin-top: 0px;
+    margin-bottom: 12px;
 }
-.text-margin-0{
-    margin: 0px; 
+
+.text-margin-0 {
+    margin: 0px;
 }
+
+/*
 .text-margin-t0{
     margin-top: 0px;
 }
@@ -64,280 +135,577 @@ h2 {font-family: "Spectral SC", serif;
 .text-margin-b12{
     margin-bottom: 12px;
 }
+
 .text-margin-t0-b12{
+   
     margin-top: 0px;
     margin-bottom: 12px;
 }
+.text-margin-t0-r18{
+    margin-top: 0px;
+    margin-right: 18px;
+}
+*/
+
+/*стили ссылок */
+
 a {
     color: #2E2F22;
 }
 
-.white-text{
-    color: white;
-}
-
-.float-left{
-    float: left;
-}
-
-.float-right{
-    float: right;
-}
-
-.header {
-    width: 1440px;
-    height: 581px;
-    background-image:url(img/head.svg);
-    border: 1px solid black;
-    margin: 0px auto 84px;  
-}
-.menu{
-    display: flex;
-    flex-direction: row;
-    /* flex по центру лого слева меню справа*/
-    justify-content: flex-end;
-    height: 87px;
-    align-items: center;
-    margin: 0px 120px;
-}
-.menu-logo{  
-    width: 130px;
-   margin-right: auto;
-   margin-left: 0px;
-}
-.menu-item{
-    height: 25px;
-    margin-left: 84px;
-}
- 
-.main{
-    width: 1440px;
-    margin: auto;
-}
-
-.my-article{
-    /*!!!! по моему это ерунда и разделы должны расширяться вниз в зависимости от контента
-    по ширине, возможно, не ограничивать. решить отступами или центровкой вложенных блоков*/
-    /* для флексов - перенос содержимого*/
-
-    width: 1200px;
-    min-height: 1290px;
-    /*мин-высота чтобы блок растягивался по высоте - потому что в сафаре шрифты как-то по-другому рисуются и есть неожиданные переносы на новую строку*/
-    margin: 0px auto 84px;
-}
-  .content-flex{
-    display: flex;
-    flex-direction: row;
-
-  }
- .last-article{
-    margin-top: 49px;
- }
- 
- .one-article{
-    width: 387px;
- }
- .one-article:nth-child(2), .portfolio-item:nth-child(2)
- {
-     margin-left: auto;
-     margin-right: auto;
-     
- }
- .top-article{
-    margin-top: 62px; 
- }
- .top-article-item{
-    width: 590px;
-    height: 552px;
-    border-radius: 10px; 
-    padding: 0px;
-    /* ещё параметры фонового рисунка - центрирование и повтор-запрещен*/
- }
- .flex-item-left{
-margin-right: auto;
- }
- .flex-item-right{
-    margin-left: auto;  
- }
- .top-article-text{
- margin-left: 82px;
- margin-right: 79px;
- margin-top: 359px;
-text-align: left;   
- }
- .tag{ 
-   color:rgba(46, 47, 34, 0.7);
- }
-
-.tag-top{ 
-    color:rgba(255, 255, 255, 0.7);
-}
-
-.my-article-footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    height: 150px;
-    text-align: center; 
-}
-.article-header{
-    text-align: center;
-    height: 104px; 
-}
-.about-me{
-    width: 1200px;
-    height: 798px;
-    margin: 0px auto 84px;
-}
-.about-me-block{
-    width: 590px;
-    height: 693px;
-    border-radius: 10px;
-}
-.about-me-summary{  
-    padding-left: 20px;
-    padding-top: 42px;
-}
-.about-me-maxim{ 
-    margin-top: 48px;
-    border-left: 3px solid #D7D1C9;
-    padding: 27px 20px 27px 20px;
-    font-style: italic;
-font-weight: normal;
-font-size: 30px;
-line-height: 40px;
-}
-.portfolio{
-    width: 1220px;
-    height: 779px;
-    margin: 0px auto 84px;
-}
-.portfolio-item{
-    width: 389px;
-    min-height: 525px;
-    border-radius: 10px; 
-    padding: 0px;
-}
-.portfolio-text{
-    margin-left: 18px;
-    margin-right: 18px;
-    text-align: center;
-}
-.journal{
-    margin-top: 140px;
-    margin-bottom: 0px;
-}
-
-.article-name{
-    margin-top: 44px;
-    margin-bottom: 0px;
-}
-.article-desc{
-    margin-top: 17px;
-    margin-bottom: 0px;
-}
-.write-me{
-     width: 996px;
-     height: 741px;
-    margin: 0px auto 84px;
-}
-
-.form{
-    width: 996px;
-    min-height: 637px;
-    border-radius: 10px;
-    background: url("img/form.svg") center no-repeat;
-    padding:0px;
-}
-.div-form{
-    padding: 53px 80px 62px 80px;
-}
-.contact{  
-    display: inline-block;
-    width: 48.5%;
-    margin-bottom: 20px;
-}
-.contact:nth-child(2){
-    margin-left: 20px;
-}
-
-input, textarea{
-    border: 1px solid black;
-    border-radius: 10px;
-    vertical-align: middle;
-}
-.contact input{
-    padding:20px;  
-    width: 90%; 
-}
-textarea {
-    width: 95%;
-    margin-bottom: 20px;
-    padding:20px;  
-    opacity: 0.7;   
-}
-.button{
-     text-align: center;
-}
-.button input {
-    padding: 12px 65px;
-    text-transform: uppercase;
-    background-color: transparent;
-}
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.theme-button{
-    width: 203px;
-    height: 46px;
-    background-color:#D7D1C9;
-    border: 0px;
-    border-radius: 10px;
-    font-size: 16px;
-    line-height: 22px;
-    float: right;  
-}
-.show-button{
-    height: 44px;
-padding: 12px 58px;
-border: 1px solid black;
-    border-radius: 10px;
-     font-size: 16px;
-     line-height: 22px;
-background-color: transparent;
-}
-
-.img-border{
-    border-radius: 10px;
-    width: 387px;
-    /*ширина лишняя убрать в нужный элемент*/
-}
-
-.img-arrow-down{
-vertical-align: middle;
-padding-left: 33px;
-}
-
-.footer{
-    width: 1440px;
-    height: 181px;
-    background-color: #D7D1C9;
-    margin: auto;
-    text-align: center;
-}
-.footer a{
+.footer a {
     display: inline-block;
     margin-top: 65px;
     margin-bottom: 91px;
     margin-left: 120px;
     font-size: 18px;
     line-height: 25px;
-    
 }
-.menu a, .footer a {
+
+.menu a, .footer a, .last-article a, .top-article a {
     text-decoration: none;
+}
+
+/* Теги*/
+
+.tag-gray {
+    color: rgba(46, 47, 34, 0.7);
+}
+
+.tag-white {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* особенности цвета в зависимости от фона */
+
+.white-text {
+    color: white;
+}
+
+/* флексы и флоаты и выравнивание */
+
+.content-flex {
+    display: flex;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.flex-item-left {
+    margin-right: auto;
+}
+
+.flex-item-right {
+    margin-left: auto;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* элементы страниц */
+
+/*заголовок*/
+
+.header {
+    height: 581px;
+    margin-bottom: 84px;
+}
+
+.page1 header {
+    background-image: url(img/page1.jpg);
+}
+
+.page2 header {
+    background-image: url(img/page2.jpg);
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    height: 87px;
+    align-items: center;
+    margin: 0px 120px;
+}
+
+.menu-logo {
+    width: 130px;
+    margin-right: auto;
+    margin-left: 0px;
+}
+
+.menu-item {
+    height: 25px;
+    margin-left: 84px;
+}
+
+.main {
+    width: 1200px;
+    margin: auto;
+}
+
+/* раздел со статьями */
+
+.my-article {
+    min-height: 1290px;
+    margin: 0px auto 85px auto;
+}
+
+.last-article {
+    margin-top: 49px;
+}
+
+.one-article {
+    width: 387px;
+}
+
+.one-article .article-title {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 8px;
+}
+
+.one-article, .portfolio-item {
+    /* margin-left: auto; */
+    margin-right: 20px;
+}
+
+/* топовые статьи*/
+
+.top-article {
+    margin-top: 62px;
+}
+
+.top-article-item {
+    width: 590px;
+    min-height: 552px;
+    border-radius: 10px;
+    padding: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.top-article-text {
+    margin-left: 82px;
+    margin-right: 79px;
+    margin-top: 359px;
+    text-align: left;
+}
+
+.top-article-text .article-title {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+/*подвал под статьями, где кнопка*/
+
+.my-article-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*
+    height: 150px;  */
+}
+
+.article-header {
+    text-align: center;
+}
+
+.article-header h2 {
+    margin-bottom: 49px;
+}
+
+/* блок обо мне */
+
+.about-me {
+    min-height: 798px;
+    margin: 0px auto 84px;
+}
+
+.about-me-block {
+    width: 590px;
+    min-height: 693px;
+    border-radius: 10px;
+}
+
+.about-me-summary {
+    padding: 42px 73px 0px 20px;
+}
+
+.about-me-maxim {
+    margin-top: 71px;
+    border-left: 3px solid #D7D1C9;
+    padding: 27px 20px 27px 20px;
+}
+
+.about-me-maxim p {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0px;
+}
+
+/* портфолио */
+
+.portfolio {
+    min-height: 779px;
+    margin: 0px auto 84px;
+}
+
+.portfolio-item {
+    width: 389px;
+    min-height: 525px;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.portfolio-text {
+    margin-left: 18px;
+    margin-right: 18px;
+    text-align: center;
+}
+
+.journal {
+    margin-top: 140px;
+    margin-bottom: 0px;
+}
+
+.article-name {
+    margin-top: 44px;
+    margin-bottom: 0px;
+}
+
+.article-desc {
+    margin-top: 17px;
+    margin-bottom: 0px;
+}
+
+.write-me {
+    width: 996px;
+    height: 741px;
+    margin: 0px auto 84px;
+}
+
+.portfolio-text .article-title, label {
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0px;
+}
+
+.portfolio-text .j-name {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0px;
+}
+
+.portfolio .button2 {
+    text-transform: uppercase;
+}
+
+/*вторая страница */
+
+.article {
+    width: 998px;
+    min-height: 1465px;
+    margin-left: 120px;
+    margin-bottom: 81px;
+    text-align: left;
+}
+
+.page2 .tag {
+    margin: 6px auto 0px 0px;
+}
+
+.page2 .tag p {
+    margin: 0px;
+}
+
+.page2 .tag p time {
+    margin-left: 18px;
+}
+
+.article-body {
+    margin: 40px auto 50px 0px;
+}
+
+.article-body figure {
+    margin: 40px auto;
+}
+
+.article-body figure img {
+    margin: 0px auto 10px auto;
+}
+
+.share-and-like {
+    /* height: 50px;   border:1px solid olive;*/
+    margin-bottom: 35px;
+    justify-content: flex-end;
+}
+
+.like {
+    margin-right: auto;
+    margin-left: 0px;
+}
+
+.like button {
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.like-counter {
+    vertical-align: baseline;
+    font-size: 24px;
+    line-height: 26px;
+    margin-left: 14px;
+}
+
+.share-and-like .share {
+    margin-left: 32px;
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+}
+
+.gohome a {
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-decoration: none;
+}
+
+.feedback {
+    width: 793px;
+    margin-left: 120px;
+    margin-bottom: 77px;
+    text-align: left;
+}
+
+.show-msg {
+    padding: 44px 80px 50px 100px;
+    border-radius: 10px;
+    background-color: #ECE1E1;
+}
+
+.msg-item:nth-child(2) {
+    margin-top: 55px;
+}
+
+.msg-item:nth-child(n+3) {
+    margin-top: 23px;
+}
+
+.person .avatar {
+    margin: 0px 13px 14px 0px;
+    width: 50px;
+    height: 50px;
+}
+
+.person .user-name {
+    font-weight: bold;
+}
+
+/*форма */
+
+/*кнопка - общий вид*/
+
+.button2 {
+    width: 224px;
+    height: 46px;
+    border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+/*общая */
+
+textarea {
+    border: 1px solid black;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+button, input[type="submit"]{
+    cursor: pointer;
+}
+/*форма второй страницф ниже*/
+
+/*отступ кнопок на 1й странице*/
+
+.showarticle {
+    margin-top: 104px;
+}
+
+.page1 .form {
+    width: 996px;
+    min-height: 637px;
+    border-radius: 10px;
+    background: url("img/form.jpg") center no-repeat;
+    padding: 0px;
+}
+
+.div-form {
+    padding: 53px 80px 62px 80px;
+}
+
+.page1 .form .contact {
+    display: inline-block;
+    width: 48.5%;
+    margin-bottom: 20px;
+}
+
+.page1 .form .contact:nth-child(2) {
+    margin-left: 20px;
+}
+
+.page1 form label {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.page1 .form input {
+    border: 1px solid black;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+.page1 .form .contact input {
+    padding: 20px;
+    width: 90%;
+}
+
+.page1 .form textarea {
+    /* это для главной страницы. для второй нужно по-другому */
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 20px;
+    opacity: 0.7;
+}
+
+.page1 form input::placeholder, .page1 form textarea::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #202117;
+    opacity: 0.7;
+}
+
+.submit {
+    text-align: center;
+}
+
+.submit input {
+    text-transform: uppercase;
+}
+
+/*форма второй страницы*/
+
+.send-msg {
+    padding-left: 81px;
+    padding-top: 77px;
+    padding-right: 0px;
+}
+
+.page2 .form fieldset {
+    padding: 0px;
+    border: none;
+}
+
+.page2 .form fieldset legend {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.page2 .button-set {
+    margin-top: 69px;
+    padding: 0px;
+}
+
+.page2 .button-set-left {
+    margin-right: 80px;
+}
+
+.page2 .button-set-left div:nth-child(2) {
+    margin-top: 35px;
+    margin-bottom: 53px;
+}
+
+.page2 form input:not([type="submit"]) {
+    padding-top: 0px;
+    padding-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.page2 form textarea {
+    padding: 18px 20px 14px 20px;
+    width: 366px;
+    margin-bottom: 0px;
+}
+
+.page2 form input::placeholder, .page2 form textarea::placeholder {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2E2F22;
+}
+
+/* выпадающий список */
+
+.tag-select {
+    width: 203px;
+    height: 46px;
+    border: 0px;
+    border-radius: 10px;
+    padding-left: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(img/arrow-down.svg) 90% no-repeat #D7D1C9;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 33px;
+}
+
+/* рисунки  для статей */
+
+.one-article .img {
+    border-radius: 10px;
+    width: 387px;
+}
+
+/* стрелка */
+
+.img-arrow-down {
+    vertical-align: middle;
+    padding-left: 33px;
+}
+
+/* подвал */
+
+.footer {
+    height: 181px;
+    background-color: #D7D1C9;
+    margin: auto;
+    text-align: center;
+}
+.warning{
+    color: red;
 }
